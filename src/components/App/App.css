@@ -9,13 +9,16 @@ h1, h2, h3 {
 }
 
 button {
-  /* background-color: #FE4B0C;
-  color: white; */
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 20px;
   font-family: 'Inter', sans-serif;
-  font-size: small;
+  font-size: x-small;
   font-weight: bold;
   margin: 10px;
-  padding: 10px;
+  padding: 10px 20px;
+}
+
+.contact-btn {
+  background-color: #FE4B0C;
+  color: white;
 }

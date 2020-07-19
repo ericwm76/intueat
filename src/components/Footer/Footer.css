@@ -1,0 +1,27 @@
+.footer {
+  text-align: center;
+}
+
+.contact-box {
+  background-color: #FE4B0C;
+  color: #ffffff;
+  padding: 40px;
+}
+
+.questions {
+  font-size: xx-large;
+}
+
+.ending-info {
+  align-items: center;
+  color: gray;
+  display: flex;
+  font-size: x-small;
+  height: 40px;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+small {
+  margin: 10px;
+}

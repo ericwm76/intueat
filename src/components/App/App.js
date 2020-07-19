@@ -1,9 +1,11 @@
 import React, { useState, useEffect }from 'react';
 import Nav from '../Nav/Nav';
+import Main from '../Main/Main'
 import Slideshow from '../Slideshow/Slideshow';
-import LeftSideBar from '../ChefInfo/ChefInfo';
+import ChefInfo from '../ChefInfo/ChefInfo';
 import data from '../../data';
 import './App.css';
+import Footer from '../Footer/Footer';
 
 
 const App = () => {
@@ -15,8 +17,8 @@ const App = () => {
   return (
     <div className="App">
       <Nav />
-      <Slideshow />
-      <LeftSideBar chefData={chefData}/>
+      <Main chefData={chefData} isMobile={isMobile}/>
+      <Footer />
     </div>
   );
 };

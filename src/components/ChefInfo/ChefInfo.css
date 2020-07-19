@@ -1,15 +1,27 @@
 .chef-info {
-  width: 55%;
+  grid-area: content;
+  margin: 0 0 100px 0;
 }
 
 .chef-details {
-  text-decoration: none;
+  font-size: x-small;
   border-bottom: 1px solid lightgray;
-  margin: 0 30px;
+  text-decoration: none;
+  padding: 20px 0;
 }
 
 h1 {
   font-size: x-large;
+}
+
+h2 {
+  font-size: small;
+  margin: 0;
+}
+
+p, li {
+  margin: 3px;
+  color: rgb(68, 68, 68);
 }
 
 .tags-container {
@@ -27,8 +39,4 @@ h1 {
   list-style: none;
   margin: 3px;
   padding: 3px;
-}
-
-.footer {
-  background-color: #FE4B0C;
 }

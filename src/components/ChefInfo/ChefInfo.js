@@ -67,19 +67,6 @@ const ChefInfo = ({chefData}) => {
         <p>{reviews.length} reviews</p>
       </div>
       {getReviews()}
-      <footer className="footer">
-        <div className="contact-box">
-          <h3>Have questions?</h3>
-          <button>Contact Intueat</button>
-        </div>
-        <div className="ending-info">
-          <small>INTUEAT ©2020 ALL RIGHTS RESERVED</small>
-          <div>
-            <small>PRIVACY POLICY</small>
-            <small>TERMS AND CONDITIONS</small>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }

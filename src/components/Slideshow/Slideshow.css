@@ -1,10 +1,10 @@
 .slideshow {
+  grid-area: slideshow;
   display: flex;
   justify-content: center;
 }
 
 .carousel-images {
-  height: 400px;
-  width: 600px;
-  padding: 50px;
+  border-radius: 5px;
+  width: 100%;
 }

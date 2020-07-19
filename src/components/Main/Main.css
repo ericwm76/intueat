@@ -1,0 +1,10 @@
+main {
+  display: grid;
+  grid-template-columns: 60% auto;
+  grid-template-rows: 400px auto;
+  grid-template-areas: 
+    "slideshow slideshow"
+    "content reservations";
+  width: 70%;
+  margin: auto;
+}
