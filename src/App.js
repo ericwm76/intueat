@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState, useEffect }from 'react';
+import Nav from './components/Nav/Nav'
+import Slideshow from './components/Slideshow/Slideshow'
+import LeftSideBar from './components/Left/Left'
+import data from './data'
 import './App.css';
 
-function App() {
+
+const App = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [chefData, setChefData] = useState(data);
+  const [isMobile, setIsMobile] = useState(false);
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <Slideshow />
+      <LeftSideBar chefData={chefData}/>
     </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,10 @@
+.slideshow {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-images {
+  height: 400px;
+  width: 600px;
+  padding: 50px;
+}
