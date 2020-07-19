@@ -5,23 +5,27 @@
 
 .chef-details {
   font-size: x-small;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #d1d3d4;
   text-decoration: none;
   padding: 20px 0;
 }
 
 h1 {
   font-size: x-large;
+  margin: 0 10px 0 0;
 }
 
 h2 {
   font-size: small;
-  margin: 0;
+}
+
+ul {
+  padding: 0 0 0 15px;
 }
 
 p, li {
   margin: 3px;
-  color: rgb(68, 68, 68);
+  color: #636466;
 }
 
 .tags-container {
@@ -35,8 +39,18 @@ p, li {
   font-size: x-small;
   background-color: #facdbe;
   border-radius: 3px;
-  color: #FE4B0C;
+  color: #fe4701;
   list-style: none;
   margin: 3px;
   padding: 3px;
+}
+
+.reviews {
+  display: flex;
+  align-items: center;
+}
+
+.large-star {
+  height: 10px;
+  margin: 0 5px 0 0;
 }

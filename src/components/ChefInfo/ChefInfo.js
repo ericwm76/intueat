@@ -63,8 +63,11 @@ const ChefInfo = ({chefData}) => {
       </div>
       <div className="chef-details">
         <h2>Ratings & Reviews</h2>
-        <p>{findReviewAvg()} average</p>
-        <p>{reviews.length} reviews</p>
+        <div className="reviews">
+          <img className="large-star" src={require("../../assets/star.png")} alt="Orange star"/>
+          <h1>{findReviewAvg()}</h1>
+          <p>{reviews.length} reviews</p>
+        </div>
       </div>
       {getReviews()}
     </div>

@@ -3,7 +3,7 @@
 }
 
 .contact-box {
-  background-color: #FE4B0C;
+  background-color: #fe4701;
   color: #ffffff;
   padding: 40px;
 }
@@ -14,7 +14,7 @@
 
 .ending-info {
   align-items: center;
-  color: gray;
+  color: #636466;
   display: flex;
   font-size: x-small;
   height: 40px;

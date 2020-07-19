@@ -1,6 +1,7 @@
 .App {
   font-family: 'Inter', sans-serif;
   font-size: small;
+  font-stretch: expanded;
   text-align: left;
 }
 
@@ -19,6 +20,6 @@ button {
 }
 
 .contact-btn {
-  background-color: #FE4B0C;
+  background-color: #fe4701;
   color: white;
 }
