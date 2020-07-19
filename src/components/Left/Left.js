@@ -7,14 +7,28 @@ const LeftSideBar = ({chefData}) => {
   const bookingRequirements = chefData.requirements.map(requirement => <li>{requirement}</li>);
   const mealIncludes = chefData.includes.map(includedItem => <li>{includedItem}</li>);
   const {reviews} = chefData;
-  const reviewAvg = () => {
+  const findReviewAvg = () => {
     const reviewsSum = reviews.reduce((acc, review) => {
       acc += review.rating;
-      console.log(acc)
-      return acc
+      return acc;
     }, 0);
     return reviewsSum / reviews.length;
   };
+  const getReviews = () => {
+    const reviewElems = reviews.map(review => {
+      const firstName = review.name.split(' ')[0];
+      const lastInit = review.name.split(' ')[1].split('')[0] + '.';
+      const name = `${firstName} ${lastInit}`;
+      
+      return (
+        <div className="chef-details">
+          <h3>{name}</h3>
+          <p>{review.review}</p>
+        </div>
+      )
+    })
+    return reviewElems;
+  }
 
   return (
     <div className="left-sidebar">
@@ -50,9 +64,25 @@ const LeftSideBar = ({chefData}) => {
       </div>
       <div className="chef-details">
         <h2>Ratings & Reviews</h2>
-        <p>{reviewAvg()}</p>
-        <p>{reviews.length}</p>
+        <p>{findReviewAvg()} average</p>
+        <p>{reviews.length} reviews</p>
       </div>
+      {getReviews()}
+      <footer className="footer">
+        <div className="contact-box">
+          <h3>Have questions?</h3>
+          <button>Contact Intueat</button>
+        </div>
+        <div className="ending-info">
+          <small>INTUEAT ©2020 ALL RIGHTS RESERVED</small>
+          <div>
+            <small>PRIVACY POLICY</small>
+            <small>TERMS AND CONDITIONS</small>
+          </div>
+
+        </div>
+
+      </footer>
     </div>
   )
 }
