@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState }from 'react';
+import Nav from './components/Nav/Nav'
+import Main from './components/Main/Main'
+import LeftSideBar from './components/Left/Left'
+import data from './data'
 import './App.css';
 
-function App() {
+
+const App = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [chefData, setChefData] = useState(data)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <Main />
+      <LeftSideBar chefData={chefData}/>
     </div>
   );
 }
