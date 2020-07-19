@@ -1,8 +1,8 @@
 import React, { useState, useEffect }from 'react';
-import Nav from './components/Nav/Nav'
-import Slideshow from './components/Slideshow/Slideshow'
-import LeftSideBar from './components/Left/Left'
-import data from './data'
+import Nav from '../Nav/Nav';
+import Slideshow from '../Slideshow/Slideshow';
+import LeftSideBar from '../Left/Left';
+import data from '../../data';
 import './App.css';
 
 
