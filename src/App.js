@@ -11,7 +11,6 @@ const App = () => {
   const [chefData, setChefData] = useState(data);
   const [isMobile, setIsMobile] = useState(false);
 
-  
 
   return (
     <div className="App">
