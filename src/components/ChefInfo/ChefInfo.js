@@ -1,7 +1,7 @@
 import React from 'react';
-import './Left.css'
+import './ChefInfo.css'
 
-const LeftSideBar = ({chefData}) => {
+const ChefInfo = ({chefData}) => {
   const tags = chefData.tags.map(tag => <li>{tag}</li>);
   const credentials = chefData.experience.map(credential => <li>{credential}</li>);
   const bookingRequirements = chefData.requirements.map(requirement => <li>{requirement}</li>);
@@ -87,4 +87,4 @@ const LeftSideBar = ({chefData}) => {
   )
 }
 
-export default LeftSideBar;
+export default ChefInfo;

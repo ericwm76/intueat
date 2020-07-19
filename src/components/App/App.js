@@ -1,7 +1,7 @@
 import React, { useState, useEffect }from 'react';
 import Nav from '../Nav/Nav';
 import Slideshow from '../Slideshow/Slideshow';
-import LeftSideBar from '../Left/Left';
+import LeftSideBar from '../ChefInfo/ChefInfo';
 import data from '../../data';
 import './App.css';
 
