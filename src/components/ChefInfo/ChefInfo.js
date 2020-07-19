@@ -2,7 +2,7 @@ import React from 'react';
 import './ChefInfo.css'
 
 const ChefInfo = ({chefData}) => {
-  const tags = chefData.tags.map(tag => <li>{tag}</li>);
+  const tags = chefData.tags.map(tag => <li className="tag">{tag}</li>);
   const credentials = chefData.experience.map(credential => <li>{credential}</li>);
   const bookingRequirements = chefData.requirements.map(requirement => <li>{requirement}</li>);
   const mealIncludes = chefData.includes.map(includedItem => <li>{includedItem}</li>);
@@ -31,12 +31,11 @@ const ChefInfo = ({chefData}) => {
   }
 
   return (
-    <div className="left-sidebar">
+    <div className="chef-info">
       <div className="chef-details">
-        <h2>{chefData.name}</h2>
-        <p>{chefData.accolade}</p>
-        <p>{chefData.location}</p>
-        <ul>
+        <h1>{chefData.name}</h1>
+        <p>{chefData.accolade}  {chefData.location}</p>
+        <ul className="tags-container">
           {tags}
         </ul>
       </div>
@@ -79,9 +78,7 @@ const ChefInfo = ({chefData}) => {
             <small>PRIVACY POLICY</small>
             <small>TERMS AND CONDITIONS</small>
           </div>
-
         </div>
-
       </footer>
     </div>
   )

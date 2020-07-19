@@ -1,9 +1,17 @@
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
 }
 
 .logo {
   height: 20px;
-  /* width: 10%; */
+  margin: 10px;
+}
+
+.sign-in {
+  color: black;
+  background-color: white;
+  border: none;
 }

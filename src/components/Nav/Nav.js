@@ -8,8 +8,8 @@ const Nav = () => {
     <div className="nav">
       <img className="logo" src={require("../../assets/logo.png")} alt="Intueat logo"/>
       <div className="signin-btns">
-        <button>Sign In</button>
-        <button>Create Account</button>
+        <button className="sign-in">Sign In</button>
+        <button className="create-account">Create Account</button>
       </div>
     </div>
   )
