@@ -1,6 +1,6 @@
 import React, { useState }from 'react';
 import Nav from './components/Nav/Nav'
-import Main from './components/Main/Main'
+import Slideshow from './components/Slideshow/Slideshow'
 import LeftSideBar from './components/Left/Left'
 import data from './data'
 import './App.css';
@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div className="App">
       <Nav />
-      <Main />
+      <Slideshow />
       <LeftSideBar chefData={chefData}/>
     </div>
   );
