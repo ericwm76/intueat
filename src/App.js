@@ -1,4 +1,4 @@
-import React, { useState }from 'react';
+import React, { useState, useEffect }from 'react';
 import Nav from './components/Nav/Nav'
 import Slideshow from './components/Slideshow/Slideshow'
 import LeftSideBar from './components/Left/Left'
@@ -7,8 +7,11 @@ import './App.css';
 
 
 const App = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
-  const [chefData, setChefData] = useState(data)
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [chefData, setChefData] = useState(data);
+  const [isMobile, setIsMobile] = useState(false);
+
+  
 
   return (
     <div className="App">
@@ -17,6 +20,6 @@ const App = () => {
       <LeftSideBar chefData={chefData}/>
     </div>
   );
-}
+};
 
 export default App;
