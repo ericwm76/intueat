@@ -34,7 +34,7 @@ const ChefInfo = ({chefData}) => {
     <div className="chef-info">
       <div className="chef-details">
         <h1>{chefData.name}</h1>
-        <p>{chefData.accolade}  {chefData.location}</p>
+        <p>{chefData.accolade} • {chefData.location}</p>
         <ul className="tags-container">
           {tags}
         </ul>

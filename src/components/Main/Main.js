@@ -1,6 +1,7 @@
 import React from 'react';
 import Slideshow from '../Slideshow/Slideshow';
 import ChefInfo from '../ChefInfo/ChefInfo';
+import Reservations from '../Reservations/Reservations'
 import './Main.css';
 
 const Main = ({chefData, isMobile}) => {
@@ -9,6 +10,7 @@ const Main = ({chefData, isMobile}) => {
     <main>
       <Slideshow />
       <ChefInfo chefData={chefData} />
+      <Reservations chefData={chefData}/>
     </main>
   )
 }
