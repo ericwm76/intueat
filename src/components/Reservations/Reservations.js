@@ -41,8 +41,8 @@ const Reservations = ({chefData}) => {
           </div>
         </div>
       </div>
-
-      <small>By continuing you agree to our <a>Terms & Conditions</a></small>
+      <button className="reserve-btn">Reserve and Pay Deposit</button>
+      <p className="terms-and-conds-text">By continuing you agree to our <a>Terms & Conditions</a></p>
     </div>
   )
 }

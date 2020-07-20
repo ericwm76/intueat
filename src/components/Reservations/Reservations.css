@@ -1,9 +1,13 @@
 .reservations-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: 1px solid #d1d3d4;
   border-radius: 5px;
   grid-area: reservations;
   margin: 20px 0 0 30px;
   padding: 10px;
+  width: 200px;
 }
 
 .resy-header {
@@ -20,11 +24,13 @@
 
 .resy-input {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  padding: 5px;
+  /* padding: 5px; */
   border: 1px solid #d1d3d4;
   border-radius: 5px;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .resy-input-label {
@@ -63,4 +69,20 @@ input {
   width: 20px;
   margin: 0 10px;
   padding: 0;
+}
+
+.reserve-btn {
+  background-color: #fe4701;
+  border: none;
+  box-shadow: 2px 2px 5px #d1d3d4;
+  color: white;
+  width: 100%;
+}
+
+.terms-and-conds-text {
+  font-size: 8px;
+}
+
+a {
+  text-decoration: underline;
 }
