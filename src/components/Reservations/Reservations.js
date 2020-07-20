@@ -15,10 +15,10 @@ const Reservations = ({chefData}) => {
   return (
     <div className="reservations-card">
       <div className="resy-header">
-        <p><span className="price">${chefData.pricePerPerson}</span> per person</p>
+        <p className="price-per-person"><span className="price">${chefData.pricePerPerson}</span> per person</p>
         <div className="reviews">
           <img className="large-star" src={require("../../assets/star.png")} alt="Orange star"/>
-          <h2>{findReviewAvg()}</h2>
+          <h2 className="review-avg">{findReviewAvg()}</h2>
         </div>
       </div>
       <div className="resy-inputs">
