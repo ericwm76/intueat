@@ -7,7 +7,7 @@ import './Main.css';
 const Main = ({chefData, isMobile}) => {
 
   return (
-    <main>
+    <main className={isMobile ? "main-mobile" : "main-desktop"}>
       <Slideshow />
       <ChefInfo chefData={chefData} />
       <Reservations chefData={chefData}/>
