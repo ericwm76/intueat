@@ -1,0 +1,11 @@
+.review-avg {
+  display: flex;
+  align-items: center;
+}
+
+.review-avg-num {
+  display: inline;
+  color: black;
+  font-size: x-large;
+  font-weight: bold;
+}

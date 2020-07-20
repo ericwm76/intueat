@@ -4,7 +4,11 @@
   justify-content: center;
 }
 
-.carousel-images {
+.carousel-images-mobile {
+  width: 100%;
+}
+
+.carousel-images-desktop {
   border-radius: 5px;
   width: 100%;
 }
