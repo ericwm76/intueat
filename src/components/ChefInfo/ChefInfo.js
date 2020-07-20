@@ -1,8 +1,8 @@
 import React from 'react';
-import './Left.css'
+import './ChefInfo.css'
 
-const LeftSideBar = ({chefData}) => {
-  const tags = chefData.tags.map(tag => <li>{tag}</li>);
+const ChefInfo = ({chefData}) => {
+  const tags = chefData.tags.map(tag => <li className="tag">{tag}</li>);
   const credentials = chefData.experience.map(credential => <li>{credential}</li>);
   const bookingRequirements = chefData.requirements.map(requirement => <li>{requirement}</li>);
   const mealIncludes = chefData.includes.map(includedItem => <li>{includedItem}</li>);
@@ -31,12 +31,11 @@ const LeftSideBar = ({chefData}) => {
   }
 
   return (
-    <div className="left-sidebar">
+    <div className="chef-info">
       <div className="chef-details">
-        <h2>{chefData.name}</h2>
-        <p>{chefData.accolade}</p>
-        <p>{chefData.location}</p>
-        <ul>
+        <h1>{chefData.name}</h1>
+        <p>{chefData.accolade} • {chefData.location}</p>
+        <ul className="tags-container">
           {tags}
         </ul>
       </div>
@@ -64,27 +63,15 @@ const LeftSideBar = ({chefData}) => {
       </div>
       <div className="chef-details">
         <h2>Ratings & Reviews</h2>
-        <p>{findReviewAvg()} average</p>
-        <p>{reviews.length} reviews</p>
+        <div className="reviews">
+          <img className="large-star" src={require("../../assets/star.png")} alt="Orange star"/>
+          <h1>{findReviewAvg()}</h1>
+          <p>{reviews.length} reviews</p>
+        </div>
       </div>
       {getReviews()}
-      <footer className="footer">
-        <div className="contact-box">
-          <h3>Have questions?</h3>
-          <button>Contact Intueat</button>
-        </div>
-        <div className="ending-info">
-          <small>INTUEAT ©2020 ALL RIGHTS RESERVED</small>
-          <div>
-            <small>PRIVACY POLICY</small>
-            <small>TERMS AND CONDITIONS</small>
-          </div>
-
-        </div>
-
-      </footer>
     </div>
   )
 }
 
-export default LeftSideBar;
+export default ChefInfo;

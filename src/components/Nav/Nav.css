@@ -1,4 +1,24 @@
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.logo {
+  height: 20px;
+  margin: 20px;
+}
+
+.sign-in {
+  color: black;
+  background-color: white;
+  border: none;
+}
+
+.create-account {
+  color: #fe4701;
+  background-color: #ffffff;
+  border: 2px solid #fe4701;
+  box-shadow: 2px 2px 5px #d1d3d4;
 }

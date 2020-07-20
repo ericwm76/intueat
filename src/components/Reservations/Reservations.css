@@ -1,0 +1,100 @@
+.reservations-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: end;
+  justify-content: space-evenly;
+  border: 1px solid #d1d3d4;
+  border-radius: 5px;
+  grid-area: reservations;
+  margin: 20px 0 0 0;
+  padding: 10px;
+  height: 300px;
+  width: 200px;
+}
+
+.resy-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.price-per-person, .review-avg {
+  margin: 0;
+}
+
+.price {
+  font-weight: bold;
+  font-size: large;
+  color: black;
+}
+
+.resy-inputs {
+  width: 100%;
+}
+
+.resy-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #d1d3d4;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+  height: 30px;
+}
+
+.resy-input-label {
+  font-family: 'Inter', sans-serif;
+  font-size: small;
+  font-stretch: expanded;
+}
+
+input {
+  border: none;
+  padding: 0;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.counter-btns {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.counter-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #636466;
+  border-radius: 50%;
+  font-weight: 400;
+  font-size: medium;
+  height: 20px;
+  width: 20px;
+  margin: 0 10px;
+  padding: 0;
+}
+
+.reserve-btn {
+  background-color: #fe4701;
+  border: none;
+  box-shadow: 2px 2px 5px #d1d3d4;
+  color: white;
+  width: 100%;
+}
+
+.terms-and-conds-text {
+  font-size: 8px;
+}
+
+a {
+  text-decoration: underline;
+}

@@ -1,0 +1,56 @@
+.chef-info {
+  grid-area: content;
+  margin: 0 0 100px 0;
+}
+
+.chef-details {
+  font-size: x-small;
+  border-bottom: 1px solid #d1d3d4;
+  text-decoration: none;
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: x-large;
+  margin: 0 10px 0 0;
+}
+
+h2 {
+  font-size: small;
+}
+
+ul {
+  padding: 0 0 0 15px;
+}
+
+p, li {
+  margin: 3px;
+  color: #636466;
+}
+
+.tags-container {
+  display: flex;
+  justify-content: left;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.tag {
+  font-size: x-small;
+  background-color: #facdbe;
+  border-radius: 3px;
+  color: #fe4701;
+  list-style: none;
+  margin: 3px;
+  padding: 3px;
+}
+
+.reviews {
+  display: flex;
+  align-items: center;
+}
+
+.large-star {
+  height: 10px;
+  margin: 0 5px 0 0;
+}
