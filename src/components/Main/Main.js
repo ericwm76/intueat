@@ -8,9 +8,9 @@ const Main = ({chefData, isMobile}) => {
 
   return (
     <main className={isMobile ? "main-mobile" : "main-desktop"}>
-      <Slideshow />
-      <ChefInfo chefData={chefData} />
-      <Reservations chefData={chefData}/>
+      <Slideshow isMobile={isMobile}/>
+      <ChefInfo chefData={chefData} isMobile={isMobile}/>
+      <Reservations chefData={chefData} isMobile={isMobile}/>
     </main>
   )
 }
