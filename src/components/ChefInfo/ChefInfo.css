@@ -3,6 +3,15 @@
   margin: 0 0 100px 0;
 }
 
+.chef-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chef-name-mobile {
+  display: inline;
+}
+
 .chef-details {
   font-size: x-small;
   border-bottom: 1px solid #d1d3d4;
@@ -51,6 +60,6 @@ p, li {
 }
 
 .large-star {
-  height: 10px;
+  height: 15px;
   margin: 0 5px 0 0;
 }
