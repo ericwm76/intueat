@@ -1,8 +1,7 @@
 This project was created by me, Eric Meldrum, as part of a code challenge for Brewer Digital. I was given a comp for both desktop and mobile versions of Intueat, an app for booking in-home culinary experiences with professional chefs, and asked to recreate it.
 
 ### Technology / Libraries
-React
-React-responsive
+React, react-responsive
 
 ### Clone down the API
 1. Clone down the repo
